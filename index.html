@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+  <meta charset="UTF-8" />
+  <title>Lannie Booton | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is my first paragraph.</p>
+  <header>
+    <div class="header-inner">
+      <div class="site-title">Lannie Booton</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="content-box">
+      <!-- HOME / GALLERY -->
+      <section>
+        <h2 class="section-title">Selected Works</h2>
+        <div class="grid">
+          
+          <img src="https://placehold.co/600x800/0d0d13/8b1e3f?text=Artwork+1" alt="Artwork 1" />
+          <img src="https://placehold.co/600x800/0d0d13/8b1e3f?text=Artwork+2" alt="Artwork 2" />
+          <img src="https://placehold.co/600x800/0d0d13/8b1e3f?text=Artwork+3" alt="Artwork 3" />
+          <img src="https://placehold.co/600x800/0d0d13/8b1e3f?text=Artwork+4" alt="Artwork 4" />
+          <img src="https://placehold.co/600x800/0d0d13/8b1e3f?text=Artwork+5" alt="Artwork 5" />
+          <img src="https://placehold.co/600x800/0d0d13/8b1e3f?text=Artwork+6" alt="Artwork 6" />
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <h2 class="section-title">About</h2>
+        <p class="text-block">
+          Hailing from the UK and living in <span style="color: #8b1e3f;">NZ</span>, I am an award-winning multidisciplinary artist with <span style="color: #8b1e3f;">two decades of experience</span> across illustration, game development, teaching, television, short film, and sculpture. 
+          <br>
+          Though I'm a versatile creator and work in a wide range of styles, I have a love for horror art, fantasy, and sci-fi. Some of my biggest inspirations
+          being Jim Henson, Tim Burton, H.R Giger, Jim Moir, and Yoshitaka Amano. 
+          <br>
+          I love to experiment and play with new mediums, and like many artists probably have a few too many hobbies. I'm <span style="color: #8b1e3f;">also a programmer</span> and have an interest in Arduino, Raspberry Pi, and a few programming languages that I use to
+          make largely ridiculous games or tools. 
+          <br>
+          One day I'd love to get into tattooing and I suspect that'd be the next realm I explore when able! As it stands I currently work in the animation industry as a technical artist for television productions. Previously I have also worked in compositing/VFX, editing, storyboarding, and screenwriting.
+        </p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <p class="text-block">
+          <h3>Digital</h3>
+          <p style="color: #8b1e3f;">48 Hour Film winners:</p> Loot and Blunder, Terrafried, For Evelyn, Recesses<br><br>
+          <p style="color: #8b1e3f;">Ludum Dare winners:</p> Narcoleptic Chicken Kid, Million Dollar Manbaby<br><br>
+          <p style="color: #8b1e3f;">Other notable awards and nominations:</p> Spicy Boy's Time to Shine <em>(Game, winner)</em>, Punishment of God <em>(Music video, nomination)</em><br><br>
+          <p style="color: #8b1e3f;">Television credits (Screenwriter, Compositing, Animatics, Technical Artist):</p> Badjelly the Witch, Be With Zee, Barefoot Bandits, Tumeke Space, Juju Brain, Dead Sea Squirrels, The Drawing Show, Jandal Burn, Pipi Ma, Night Eyes, Quimbo's Quest<br><br>
+          <p style="color: #8b1e3f;">Additional work:</p> Meta, Sony Entertainment, Pindex, ANZ, Google Ads, Marvel, Bailey Wiley, Bulletbelt, 1032<br><br>
+        
+          <h3>Traditional</h3>
+          I exhibit around North Canterbury with mixed media paintings and sculpture work. I am available for commissions and bespoke items. Please contact me if you'd like to work together on a project.
+        </p>
+
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p style="color: #8b1e3f;">I am available for commissions in the following scope: 
+        <ul>
+            <li>Artwork (digital/traditional, international shipping available)</li>
+            <li>Sculpture (NZ/Aus only)</li>
+            <li>Screenwriting, editing, post production services</li>
+            <li>Game prototyping</li>
+            <li>Narrative and design consulting for screen and games </li>
+        </ul><br>
+        <em>Myself and my partner Dane Jacobs also collaborate and offer full animation pipelines for projects, from concept to delivery.</em><br>
+
+        Please note that it's really appreciated if you have a budget and deadline in mind and can include this information in your email.
+
+        </p>
+        <div class="contact-list">
+          <a href="mailto:ljbooton@email.com">ljbooton@email.com</a>
+          <a href="https://www.instagram.com/lannie_art">Instagram: Lannie_art</a>
+          <a href="https://github.com/introvertices" target="_blank">Github: Introvertices</a>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="year"></span> Lannie Booton - All rights reserved.
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
